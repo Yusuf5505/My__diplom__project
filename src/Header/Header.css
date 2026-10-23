@@ -1,0 +1,128 @@
+
+.header {
+  background-color: #f0f8ff; 
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+}
+
+/* Выравнивание элементов в строку */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Логотип */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.green-text {
+  color: #388e3c;
+}
+
+/* Тексты */
+.header-services {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.header-info {
+  font-size: 13px;
+  color: #777;
+}
+
+.header-info p {
+  margin-bottom: 5px;
+}
+
+/* Блок с телефонами и кнопкой */
+.header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.phones {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.phone-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.phone-link:hover {
+  color: #388e3c;
+}
+
+
+.messengers {
+  display: flex;
+  gap: 8px;
+}
+
+.messenger-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: none; 
+  background: transparent; 
+}
+
+
+.messenger-btn:hover {
+  opacity: 0.7; 
+}
+
+/* Размер иконок внутри кнопок */
+.messenger-icon {
+  width: 28px; 
+  height: 28px;
+  object-fit: contain;
+}
+
+/* Кнопка расчета */
+.cta-button {
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #2e7d32;
+}
+
+/* Адаптивность для маленьких экранов (упрощенная) */
+@media (max-width: 900px) {
+  .header-services, .header-info {
+    display: none; /* Скрываем длинные тексты на телефонах */
+  }
+}

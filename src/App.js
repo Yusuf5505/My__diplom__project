@@ -1,12 +1,15 @@
-
+import Nav from './Nav/Nav';
 import './App.css';
-
+import Header from './Header/Header';
 function App() {
   return (
-    <div className="App">
-      <h1> Дипломная работа</h1>
-      <h1> Дипломная работа</h1>
-    </div>
+    <>
+      <Header />
+      <Nav />
+
+
+    </>
+
   );
 }
 
