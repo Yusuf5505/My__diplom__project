@@ -1,12 +1,10 @@
-
 .header {
-  background-color: #f0f8ff; 
+  width: 100%;
+  background-color: #eff6ff; /* Нежный светло-голубой фон */
   padding: 15px 0;
-  border-bottom: 1px solid #ccc;
   font-family: Arial, sans-serif;
 }
 
-/* Выравнивание элементов в строку */
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -14,7 +12,6 @@
   gap: 15px;
 }
 
-/* Логотип */
 .header-logo {
   display: flex;
   align-items: center;
@@ -32,11 +29,10 @@
   color: #333;
 }
 
-.green-text {
-  color: #388e3c;
+.blue-text {
+  color: #2563eb; /* Синий цвет для "Eko" */
 }
 
-/* Тексты */
 .header-services {
   font-size: 13px;
   color: #555;
@@ -52,7 +48,6 @@
   margin-bottom: 5px;
 }
 
-/* Блок с телефонами и кнопкой */
 .header-contacts {
   display: flex;
   align-items: center;
@@ -70,12 +65,12 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
+  transition: color 0.3s ease;
 }
 
 .phone-link:hover {
-  color: #388e3c;
+  color: #2563eb; /* Синий при наведении */
 }
-
 
 .messengers {
   display: flex;
@@ -88,25 +83,22 @@
   align-items: center;
   width: 36px;
   height: 36px;
-  border: none; 
-  background: transparent; 
+  border: none;
+  background: transparent;
 }
-
 
 .messenger-btn:hover {
-  opacity: 0.7; 
+  opacity: 0.7;
 }
 
-/* Размер иконок внутри кнопок */
 .messenger-icon {
-  width: 28px; 
+  width: 28px;
   height: 28px;
   object-fit: contain;
 }
 
-/* Кнопка расчета */
 .cta-button {
-  background-color: #388e3c;
+  background-color: #2563eb; /* Синяя кнопка */
   color: white;
   border: none;
   border-radius: 5px;
@@ -114,15 +106,15 @@
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #2e7d32;
+  background-color: #1d4ed8; 
 }
 
-/* Адаптивность для маленьких экранов (упрощенная) */
 @media (max-width: 900px) {
   .header-services, .header-info {
-    display: none; /* Скрываем длинные тексты на телефонах */
+    display: none;
   }
 }
